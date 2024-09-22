@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestión de Turnos Médicos</title>
+    
+</head>
+<body>
+    <h1>Gestión de Turnos Médicos</h1>
+
+    <form id="turnoForm">
+        <label for="especialidad">Selecciona Especialidad:</label>
+        <select id="especialidad" class="especialidad" required>
+            <option value="">--Seleccionar--</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Pediatría">Pediatría</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Neurología">Neurología</option>
+        </select>
+
+        <label for="nombrePaciente">Nombre del Paciente:</label>
+        <input type="text" id="nombrePaciente" required>
+
+        <label for="fechaTurno">Fecha del Turno:</label>
+        <input type="date" id="fechaTurno" required>
+
+        <button type="submit">Agendar Turno</button>
+    </form>
+
+    <h2>Turnos Agendados:</h2>
+    <ul id="listaTurnos"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>

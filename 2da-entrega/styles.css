@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background-color: antiquewhite;
+}
+form {
+    margin-top: 0px;
+}
+label, textarea, input, button {
+    display: block;
+    margin: 10px;
+}
+.especialidad{
+    margin-left: 10px;
+}
